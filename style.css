@@ -122,23 +122,142 @@ main > section {
   font-weight: 700;
 }
 
-/* responsive part of header */
+/* features-2nd-part */
+.features-left-part > h2 {
+  padding-left: 20px;
+  border-left: 5px solid #ff900e;
+  font-size: 2rem;
+  width: 700px;
+}
+.features-left-part > p {
+  font-size: 0.8rem;
+  width: 400;
+}
+.features-left-card > h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.features-left-part {
+  max-width: 480px;
+}
+.features-left-card > p {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.features-left-card {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.features-2 {
+  gap: 120px;
+}
+.features-right-part img {
+  width: 100%;
+  height: 90%;
+}
+.Experience-btn {
+  color: white;
+  border-radius: 8px;
+  background: #ff900e;
+  padding: 35px 32px;
+  border: none;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+.Experience-10-year {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.Experience {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+/* fact section */
+.fact-section-title{
+ font-size: 2rem;
+ margin: 0 30px;
+}
+.fact-section-description{
+font-size: 0.8rem;
+ margin: 20px 30px;
+}
+.fact-card-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 50px;
+  margin: 0 30px;
+}
+.fact-card-container >.card{
+  border: 1px solid rgb(243, 149, 106);
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.fact-card-p1{
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.fact-card-p2{
+  font-size: 1rem;
+font-weight: 600;
+}
+.sponsors-text-part{
+  text-align: center;
+}
+.sponsors-text-part>h3{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.sponsors-text-part>p{
+  font-size: 0.8rem;
+  font-weight: 400;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.sponsors-icon{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  margin: 50px auto;
+  
+}
+.sponsors-icon>div{
+  text-align: center;
+}
+
+.footer-pera{
+  font-size: 0.8rem;
+  font-weight: 400;
+max-width: 1100px;
+  padding: 30px 228px;
+  margin: 40px auto;
+  border-radius: 8px;
+background: #FFF4E7;
+text-align: center;
+}
+
+/* responsive part for mobile */
 @media screen and (max-width: 576px) {
   main > section {
-  margin-top: 20px;
-}
+    margin-top: 20px;
+  }
   .navber,
-  .nav-links {
+  .nav-links,
+  .features-2 {
     flex-direction: column;
   }
   .Features-section {
     flex-direction: column-reverse;
   }
   .img-container {
-    grid-template-columns: repeat(1,1fr);
-    
+    grid-template-columns: repeat(1, 1fr);
   }
-  .Features-text{
+  .Features-text {
     margin: 10px 0;
     margin-bottom: 20px;
   }
@@ -146,19 +265,105 @@ main > section {
     margin: 0 auto;
     margin-bottom: 20px;
   }
+  .features-2 {
+    gap: 20px;
+  }
+  .features-left-part {
+    margin: 0 10px;
+  }
+  .features-left-part > h2 {
+    width: 70%;
+  }
+  .features-left-card {
+    width: 0 10px;
+  }
+  .Experience-btn {
+    margin-left: 0px;
+    padding: 15px 12px;
+  }
+  .Experience-10-year {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  .Experience {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .fact-card-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 5px;
+  margin: 0 3px;
+}
+.sponsors-icon{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 25px;
+  margin: 50px auto;
+}
+.sponsors-text-part{
+  margin-top: 80px;
+}
+.footer-pera{
+  font-size: 0.5rem;
+  font-weight: 400;
+max-width: 100%;
+  padding: 20px 40px;
+  margin: 40px auto;
+  
+}
 
 }
+/* responsive part for tablet */
 @media screen and (min-width: 577px) and (max-width: 1000px) {
-   .Features-section {
+  .Features-section {
     flex-direction: column-reverse;
   }
-    .Features-text{
+  .features-2 {
+    flex-direction: column;
+  }
+  .Features-text {
     margin: 10px 0;
     margin-bottom: 20px;
   }
   .navber,
-.banner {
-  max-width: 700px;
-  margin: 0 auto;
+  .banner {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .features-left-part {
+    max-width: 100%;
+    margin: 0 10px;
+  }
+  .features-right-part img {
+    width: 80%;
+    margin-left: 100px;
+  }
+  .features-right-part {
+    margin: 0 auto;
+  }
+  .Experience-btn {
+    margin-left: 10px;
+  }
+    .fact-card-container {
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  margin: 0 20px;
+}
+.fact-section-title{
+ text-align: center;
+}
+.fact-section-description{
+text-align: center;
+padding-bottom: 10px;
+}
+.sponsors-icon{
+
+  grid-template-columns: repeat(2,1fr);
+  gap: 50px;
+  margin: 50px auto;
+}
+.sponsors-text-part{
+  margin-top: 80px;
 }
 }
