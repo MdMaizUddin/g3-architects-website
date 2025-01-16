@@ -46,6 +46,10 @@ main > section {
   text-decoration: none;
   font-size: 0.9rem;
 }
+.nav-link:hover{
+  color: #ff5100;
+  
+}
 .navber,
 .banner {
   max-width: 1152px;
@@ -75,6 +79,11 @@ main > section {
   border-radius: 8px;
   background: #ff900e;
 }
+.banner-content > button:hover{
+  background: #ff5100;
+   box-shadow: 2px 2px 12px 1px rgb(255, 54, 54);
+   scale: 1.05;
+} 
 .banner-img {
   width: 100%;
 }
@@ -109,10 +118,18 @@ main > section {
   border-radius: 8px;
   background: #ff900e;
 }
+.Features-text button:hover{
+  background: #ff5100;
+    box-shadow: 2px 2px 12px 1px rgb(255, 54, 54);
+      scale: 1.05;
+}
 .img-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 22px;
+}
+.img-container img:hover{
+  box-shadow: 2px 2px 12px 1px gray;
 }
 .p-2nd {
   font-weight: 700;
@@ -151,6 +168,9 @@ main > section {
   padding: 30px;
   margin-bottom: 20px;
 }
+.features-left-card:hover{
+  box-shadow: 1px 1px 10px 1px gray;
+}
 .features-2 {
   gap: 120px;
 }
@@ -166,6 +186,10 @@ main > section {
   border: none;
   margin-top: -100px;
   margin-left: -100px;
+}
+.Experience-btn:hover{
+    background: #ff5100;
+    box-shadow: 2px 2px 12px 1px rgb(255, 54, 54);
 }
 .Experience-10-year {
   font-size: 3.2rem;
@@ -196,6 +220,10 @@ font-size: 0.8rem;
   padding: 10px;
   border-radius: 5px;
 }
+.fact-card-container>.card:hover{
+   background: #ffeee6;
+    box-shadow: 1px 1px 8px 1px #ffc2c2;
+} 
 
 .fact-card-p1{
   font-size: 2rem;
@@ -228,6 +256,7 @@ font-weight: 600;
 }
 .sponsors-icon>div{
   text-align: center;
+  filter: grayscale()
 }
 
 .footer-pera{
